@@ -1,0 +1,1 @@
+[The Acuumulator Machine](https://people.cs.clemson.edu/~rlowe/cs2310/notes/accumulator.pdf)

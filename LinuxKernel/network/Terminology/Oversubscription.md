@@ -1,0 +1,1 @@
+https://networkengineering.stackexchange.com/questions/60002/what-is-oversubscription-in-networking
