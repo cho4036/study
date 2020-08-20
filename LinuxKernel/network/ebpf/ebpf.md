@@ -10,6 +10,16 @@ bpf performance(https://www.netronome.com/blog/frnog-30-faster-networking-la-fra
 
 bpf&ebpf slide(korean)(https://www.slideshare.net/TaeungSong/bpf-xdp-8-kosslab)
 
+ebpf deep dive(https://docs.cilium.io/en/v1.8/bpf/)
+
+
+https://netdevconf.info/2.1/slides/apr7/gospodarek-Netdev2.1-XDP-for-the-Rest-of-Us_Final.pdf
+
+https://linuxplumbersconf.org/event/4/contributions/489/attachments/242/423/bpf-packet-capture.pdf
+
+who is already using eBPF?(http://evcomp.dcc.ufmg.br/wp-content/uploads/eBPF-XDP.pdf)
+
+above link(http://evcomp.dcc.ufmg.br/wp-content/uploads/eBPF-XDP.pdf) has good example.
 
 used terminology:
 [skb]
