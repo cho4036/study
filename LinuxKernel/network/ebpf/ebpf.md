@@ -110,3 +110,26 @@ ex) R0 = *(uint *) (skb->data + imm32)
 3. BPF_STX_MEM : src 레지스터 값을 dst 레지스터 + 오프셋 값의 주소에 size 만큼 저장
 필요 : size, dst, src, off
 ex) *(uint *) (dst_reg + off16) = src_reg
+
+4. BPF_ALU64_IMM : dst 레지스터와 상수 값을 64bit arithmetic 연산 수행
+필요 : opcode, dst 레지스터, 상수 값
+ex) dst_reg += imm32
+
+5. BPF_LD_MAP_FD : dst 레지스터에 프로세스의 로컬 map_fd 값을 참조하여 저장
+필요 : dst 레지스터, MAP_FD 값
+
+
+BPF_STX_XADD : dst 레지스터 + 오프셋 값의 주소에 있는 데이터를 src 레지스터 값만큼 더해서 그대로 size 만큼 저장
+필요 : size, dst, src, off
+ex) *(uint *)(dst_reg + off16) += src_reg
+
+BPF_MOV64_IMM : dst 레지스터에 상수 값 저장
+필요 : dst 레지스터, 상수 값
+ex) dst_reg = imm32
+
+BPF_EXIT_INSN : BPF 프로그램 종료
+
+
+
+bpf 자료 (https://pdfs.semanticscholar.org/512c/783a5ac11f5664bada3c26175ee730a2cfab.pdf)
+(https://www.atmarkit.co.jp/ait/articles/1812/10/news016_2.html)
